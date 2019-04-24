@@ -1,0 +1,15 @@
+<div class="container">
+	<h1>Add New Genre</h1>
+
+	<%= form_for :genre, url: genres_path do |f| %>
+
+	<div class="form-group">
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+	</div>
+
+	<%= f.submit "Submit", class:'btn btn-primary' %>
+	<%= link_to "Cancel", genres_path, class:'btn btn-default' %>
+		
+	<% end %>
+</div>

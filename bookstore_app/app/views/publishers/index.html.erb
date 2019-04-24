@@ -1,0 +1,18 @@
+<div class="container">
+	<h2>Publishers</h2>
+
+	<table border="1" class="table">
+		<tr>
+			<th>Publisher Name</th>
+			<th>Publisher Country</th>
+			<th>Publisher Page</th>
+		</tr>
+		<% @publishers.each do |publisher| %>
+		<tr>
+			<td> <%= publisher.name %> </td>
+			<td> <%= publisher.country %> </td>
+			<td> <%= link_to 'Publisher Page', publisher_path(publisher) %> </td>
+		</tr>
+		<% end %>
+	</table>
+</div>

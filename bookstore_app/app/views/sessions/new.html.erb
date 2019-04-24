@@ -1,0 +1,12 @@
+<div class="container">
+	<h2>Please Login</h2>
+
+	<%= form_tag sessions_path do %>
+
+		<%= text_field_tag :userid, nil, placeholder: 'Enter Your Username', class: 'form-control' %>
+		<%= password_field_tag :password, nil, placeholder: 'Enter Your Password', class: 'form-control' %>
+
+		<%= submit_tag 'Log In' %>
+	<% end %>
+
+</div>
